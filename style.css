@@ -1,18 +1,18 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
   margin: 0;
 }
 
 header {
-  background: #0077cc;
-  color: white;
+  background: #f9fe61;
+  color: #5b3e31;
   padding: 1px;
   text-align: center;
 }
 
 header p{
   font-size: 0.9em;
-  color: #e0e0e0;  
+  color: #5b3e31;  
 }
 
 .container {
@@ -22,10 +22,10 @@ header p{
 
 .sidebar {
   width: 20%;
-  background: #f4f4f4;
+  background: #f8ff98;
   padding: 15px;
   box-sizing: border-box;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #add;
   overflow-y: auto;
 }
 
@@ -45,7 +45,7 @@ header p{
 .sidebar li ul {
   margin-left: 15px;
   padding-left: 0px;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid #add;
 }
 
 .sidebar a {
@@ -75,7 +75,7 @@ iframe {
 }
 
 .custom-link:visited {
-    color: #ffffff; /* Same color for visited links */
+    color: #5b3e31; /* Same color for visited links */
 }
 
 .custom-link:hover,
