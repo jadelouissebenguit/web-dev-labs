@@ -80,6 +80,6 @@ iframe {
 
 .custom-link:hover,
 .custom-link:active {
-    color: #06559e; /* Same color for hover and active states */
+    color: #0077cc; /* Same color for hover and active states */
     text-decoration: none; /* Ensure no underline on hover */
 }
