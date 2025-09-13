@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1: Error Identification</title>
+</head>
+<body>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(251, 255, 133);
+    }
+
+        .container {
+    display: flex;
+    justify-content: space-around; /* Correct property for horizontal spacing */
+    align-items: center;           /* Correct property for vertical alignment */
+    gap: 20px;                     
+    }
+
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(93, 0, 0);
+      color: rgb(251, 255, 133);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: jokerman, sans-serif;
+      font-size: 30px;
+      border-radius: 15px;
+    }
+    .header {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 50px;
+        color: rgb(93, 0, 0);
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <div class="header">
+    <hr>
+        <h1>Error Identification</h1>
+        <p>Error 1: justify-items is not valid on Flexbox containers</p>
+        <p>Error 2: flex-align is not a valid CSS property</p>
+    </div>
+</body>
+</html>
