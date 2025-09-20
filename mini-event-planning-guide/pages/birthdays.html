@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Plan your perfect birthday with Choi & Co. Events. Explore our creative packages and themes."/>
+  <title>Birthdays | Choi & Co. Events</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Choi & Co. Events</h1>
+    <nav>
+      <ul>
+        <!-- same nav links as index.html -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>Birthday Party Planning</h2>
+        <p>Birthdays are a time to celebrate life and joy. At Choi & Co. Events, we make birthdays extra special with themed decorations, entertainment options, and personalized touches. From kids’ parties with clowns and magicians to elegant adult soirées, we handle everything...</p>
+        <img src="../images/birthday.jpg" alt="Birthday Party Decor"/>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: choiandco.events@email.com | (0912) 345 6789</p>
+  </footer>
+  <button onclick="topFunction()" id="topBtn">Back to Top</button>
+<script>
+  const topButton = document.getElementById("topBtn");
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  };
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
+</html>

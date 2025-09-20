@@ -1,0 +1,228 @@
+/* ------------------------------
+   LOGO HEADER
+--------------------------------*/
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ------------------------------
+   RESET & BASE
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.site-header {
+  background: #7a0000;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.site-header p {
+  font-size: 0.95em;
+  color: #fff3c2;
+  margin-top: 20px;
+}
+
+/* ------------------------------
+   NAVIGATION BAR (TOP NAV)
+--------------------------------*/
+.top-nav {
+  background-color: #7a0000;
+  padding: 15px 25px;
+  border-bottom: 3px solid #969696;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a,
+.nav-list button {
+  background-color: #cc3366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.95em;
+  align-content: center;
+}
+
+.nav-list a:hover,
+.nav-list button:hover {
+  background-color: #a52a50;
+}
+
+/* Dropdowns */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 0;
+  background-color: #fadada;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  min-width: 220px;
+  z-index: 10;
+}
+
+.dropdown-content li {
+  margin: 8px 0;
+}
+
+.dropdown-content a {
+  background: none;
+  color: #7a0000;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe5e5;
+  color: #cc3366;
+}
+
+/* ------------------------------
+   CONTENT (IFRAME)
+--------------------------------*/
+.content {
+  width: 100%;
+  height: calc(100vh - 220px); /* Adjust height */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  background-color: #7a0000;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.9em;
+  color: #fff3c2;
+  border-top: 3px solid #ccc;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+
+  .content {
+    height: auto;
+  }
+}
+
+/*ABOUT PAGE SECTION*/ 
+.about-page { 
+    padding: 10px; 
+    max-width: 1500px; 
+    margin: auto; 
+    background-color: #fadada; 
+} 
+.about-page section { 
+    margin-bottom: 40px; 
+} 
+.about-page header h4 { 
+    font-size: 1.8em; 
+    color: #7a0000; 
+    margin-bottom: 10px; 
+    text-align: center;
+    font-family: 'Harlow Solid', cursive;
+} 
+.about-page p { 
+    font-size: 1em; 
+    line-height: 1.6; 
+    color: #444; 
+    font-family: 'comic sans ms', cursive, sans-serif; 
+    text-align: center;
+} 
+hr { 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    border-top: 2px solid #ccc; 
+} 
+/* Story section: text and image side by side */ 
+.story-section { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 20px; 
+} 
+.story-text { 
+    flex: 1 1 60%; 
+} 
+.story-img { 
+    flex: 1 1 20%; 
+    text-align: right; 
+} 
+.story-img img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.2); 
+}
