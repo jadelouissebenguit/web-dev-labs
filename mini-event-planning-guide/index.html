@@ -45,9 +45,8 @@
     </ul>
   </nav>
 
-    <!-- Right Content -->
     <div class="content">
-      <iframe name="contentFrame" src="about.html"></iframe>
+      <iframe name="contentFrame" src="pages/about.html"></iframe>
     </div>
   </div>
 
@@ -57,19 +56,16 @@
 
   <script>
     function toggleDropdown(id) {
-      // Close other dropdowns
       document.querySelectorAll('.dropdown-content').forEach(menu => {
         if (menu.id !== id) {
           menu.style.display = 'none';
         }
       });
 
-      // Toggle the selected dropdown
       const menu = document.getElementById(id);
       menu.style.display = (menu.style.display === "block") ? "none" : "block";
     }
 
-    // Close dropdowns when clicking outside
     document.addEventListener("click", function (e) {
       if (!e.target.closest(".dropdown")) {
         document.querySelectorAll('.dropdown-content').forEach(menu => {
@@ -78,6 +74,5 @@
       }
     });
   </script>
-
 </body>
 </html>
