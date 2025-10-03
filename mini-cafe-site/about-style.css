@@ -174,7 +174,7 @@ nav a:hover {
 }
 .values {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     max-width: 800px;
     margin: 40px auto;
