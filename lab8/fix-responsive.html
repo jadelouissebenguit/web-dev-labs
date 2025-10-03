@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Identification</title>
+  <style>
+    body {
+      background-color: #82e3e3;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #003636;
+      margin-top: 20px;
+    }
+    
+    ol {
+        list-style-position: inside; 
+        text-align: center;         
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    .container {
+      display: flex;
+      flex-direction: column; 
+      gap: 10px;
+      justify-content: center;    
+    }
+
+    .box {
+      background: rgb(11, 193, 190);
+      padding: 50px;
+      border: 5px solid #003636;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 600px) {
+      .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+      }
+
+      .box span {
+        grid-column: 1 / -1;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row; 
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>Act. 2: Error Identification</h1>
+  <div class="container">
+    <div class="box"><span>Box 1</span></div>
+    <div class="box"><span>Box 2</span></div>
+    <div class="box"><span>Box 3</span></div>
+  </div>
+<h1>Errors:</h1>
+<ol>
+  <li>Missing parentheses for @media min-width: 600px.</li>
+  <li>Extra space after the dot for .box code</li>
+  <li>Misspelled the "grid-colums"</li>
+</ol>
+</body>
+</html>
