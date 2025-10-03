@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 4: Responsive Grid Gallery</title>
+  <style>
+    body {
+      background-color: #82e3e3;
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003636;
+      margin-top: 20px;
+    }
+
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;           
+      height: 200px;         
+      object-fit: cover;     
+      border-radius: 10px;   
+      border: 5px solid #003636;
+    }
+
+    @media (min-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity 4: Responsive Grid Gallery</h1>
+  <div class="gallery">
+    <img src="images/sunset1.jpg" alt="Image 1">
+    <img src="images/sunset2.jpg" alt="Image 2">
+    <img src="images/sunset3.jpg" alt="Image 3">
+    <img src="images/sunset4.jpg" alt="Image 4">
+    <img src="images/sunset5.jpg" alt="Image 5">
+    <img src="images/sunset6.jpg" alt="Image 6">
+  </div>
+</body>
+</html>
