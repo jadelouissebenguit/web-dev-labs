@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile First Flexbox</title>
+  <style>
+    body {
+      background-color: #82e3e3;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #003636;
+      margin-top: 20px;
+    }
+    
+    /* Container setup */
+    .container {
+      display: flex;
+      flex-direction: column; /* default: stacked vertically */
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* Box styling */
+    .box {
+      background: rgb(11, 193, 190);
+      padding: 50px;
+      text-align: center;
+      border: 5px solid #003636;
+      border-radius: 10px;
+    }
+
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row; /* side-by-side */
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>Act. 1: Mobile First Flexbox Layout</h1>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+</body>
+</html>
