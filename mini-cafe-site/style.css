@@ -114,3 +114,13 @@ header {
     width: 100%;
     box-sizing: border-box;
 }
+
+.footer {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1em;
+  margin-top: 20px;
+  color: #3e3e3e;
+}
+
+
