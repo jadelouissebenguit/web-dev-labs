@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Dylan's Bakeshop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+    background-color: #ffe375;
+    color: #7b4f42;
+    line-height: 1.6;
+    padding: 0px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+    .contact-form {
+      background-color: #fff8dc;
+      padding: 30px;
+      border: 5px dashed #e0c68b;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .contact-form h2 {
+      font-family: 'Cooper Black', sans-serif;
+      color: #7b4f42;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn-custom {
+      background-color: #fff23f;
+      color: #7b4f42;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .btn-custom:hover {
+      background-color: #e0c68b;
+    }
+
+    .location {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .location iframe, .location img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Dylan's Bakeshop Logo" class="Logo">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-custom">Submit</button>
+      </div>
+    </form>
+  </div>
+
+   <h2>Our Location</h2>
+  <div class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.272324292849!2d120.97865301068559!3d14.640476885791607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5da38a6fc09%3A0x443f3ec6bf70ad2f!2s2nd%20Ave%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1759592268846!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
