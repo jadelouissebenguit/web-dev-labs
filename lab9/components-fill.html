@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act. 3: Bootstrap Fill-in-the-Blanks</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #cbcbcb;
+    }
+    /* Button styling */
+    .btn-primary {
+      background-color: #0ed683;
+      color: white;
+      padding: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      font-size: large;
+    }
+    .btn-primary:hover {
+      background-color: #037646;
+    }
+
+    /* Alert styling */
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border: 10px solid #c3e6cb;
+      font-weight: bold;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+   .navbar-brand {
+      font-weight: bold;
+      color: #155724;
+    }
+
+    /* Container for centering content */
+    .container-fluid {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+    </div>
+  </nav>
+
+  <!-- Button -->
+  <button class="btn btn-primary">Click Me</button>
+
+  <!-- Alert -->
+  <div class="alert alert-success">
+    <strong>Success!</strong> This is a Bootstrap alert.
+  </div>
+</body>
+</html>
