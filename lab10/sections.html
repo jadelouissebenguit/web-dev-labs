@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act. 5: Colored Sections with Utilities</title>
+
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #c6cdd4;
+    }
+
+    section {
+      border-radius: 100px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+    <h2>Act. 5: Colored Sections with Utilities</h2>
+
+  <section class="bg-primary text-white text-center py-5 mb-4">
+    <div class="container">
+      <h2>Primary Section</h2>
+    </div>
+  </section>
+
+  <section class="bg-success text-white text-center py-5 mb-4">
+    <div class="container">
+      <h2>Success Section</h2>
+    </div>
+  </section>
+
+  <section class="bg-dark text-white text-center py-5 mb-4">
+    <div class="container">
+      <h2>Dark Section</h2>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

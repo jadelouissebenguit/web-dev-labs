@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act. 4: Responsive Utility Showcase</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #7ff4f0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #348c9e;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-section {
+      background-color: #ffe082; /* soft yellow */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .hidden-img {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 30px;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width Section -->
+  <section class="container-fluid hero-section p-3 p-md-5">
+    <h4 class="mb-4">Act. 4: Responsive Utility Showcase</h4>
+    <h1 class="mb-4">Responsive Utility Showcase</h1>
+  </section>
+
+  <!-- Row with 3 Responsive Cards -->
+  <div class="container mb-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <h4>Card One</h4>
+          <p>This card stacks on small screens.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <h4>Card Two</h4>
+          <p>On larger screens, cards align side by side.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card p-3">
+          <h4>Card Three</h4>
+          <p>Each card remains flexible and responsive.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none d-md-block">
+    <img src="images/v4-460px-Use-a-Computer-Step-1-Version-4.jpg" alt="Responsive Example" class="hidden-img">
+    <p class="mt-2">This image is hidden on mobile</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
