@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act. 6: Visual Wireframe to Code</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-box {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+
+    main {
+      flex: 1; 
+    }
+
+
+    .cta-btn {
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #fff;
+      color: #212529;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="bg-dark text-white text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="fw-bold">Welcome to Café Bliss</h1>
+      <p class="lead mb-0">A layout built using Bootstrap utility classes</p>
+    </div>
+  </section>
+
+  <section class="container text-center mb-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="feature-box h-100">
+          <h4 class="fw-bold mb-2">Quality Coffee</h4>
+          <p class="text-muted mb-0">Only the best beans from local farms.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-box h-100">
+          <h4 class="fw-bold mb-2">Friendly Staff</h4>
+          <p class="text-muted mb-0">Great service with a smile every time.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-box h-100">
+          <h4 class="fw-bold mb-2">Cozy Ambience</h4>
+          <p class="text-muted mb-0">A perfect space to relax and unwind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-5 mt-auto">
+    <div class="container">
+      <h2 class="fw-bold">Visit Us Today!</h2>
+      <p class="mb-4">We're open from 8 AM to 8 PM daily</p>
+      <a href="#" class="cta-btn">See Our Menu</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
