@@ -30,26 +30,36 @@
           <h3>Espresso</h3>
           <p class="desc">Strong and bold, served in a small cup.</p>
           <p class="price">₱120</p>
+          <input type="number" id="qty1" placeholder="Qty" min="1">
+          <button onclick="addToCart('Espresso', 120, 'qty1')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Iced Latte</h3>
           <p class="desc">Chilled espresso with creamy milk and ice.</p>
           <p class="price">₱150</p>
+          <input type="number" id="qty2" placeholder="Qty" min="1">
+          <button onclick="addToCart('Iced Latte', 150, 'qty2')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Spanish Latte</h3>
           <p class="desc">Espresso with steamed milk and a hint of cinnamon.</p>
           <p class="price">₱160</p>
+          <input type="number" id="qty3" placeholder="Qty" min="1">
+          <button onclick="addToCart('Spanish Latte', 160, 'qty3')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Matcha Latte</h3>
           <p class="desc">Creamy matcha green tea with frothed milk.</p>
           <p class="price">₱170</p>
+          <input type="number" id="qty4" placeholder="Qty" min="1">
+          <button onclick="addToCart('Matcha Latte', 170, 'qty4')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Chocolate Frappe</h3>
           <p class="desc">Blended chocolate drink topped with whipped cream.</p>
           <p class="price">₱180</p>
+         <input type="number" id="qty5" placeholder="Qty" min="1">
+         <button onclick="addToCart('Chocolate Frappe', 180, 'qty5')">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -62,33 +72,55 @@
           <h3>Cinnamon Roll</h3>
           <p class="desc">Soft roll swirled with cinnamon and sugar glaze.</p>
           <p class="price">₱90</p>
+          <input type="number" id="qty6" placeholder="Qty" min="1">
+      <button onclick="addToCart('Cinnamon Roll', 120, 'qty6')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Cookie</h3>
           <p class="desc">Classic chocolate chip cookie.</p>
           <p class="price">₱60</p>
+          <input type="number" id="qty7" placeholder="Qty" min="1">
+          <button onclick="addToCart('Cookie', 60, 'qty7')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Brownie</h3>
-          <p class="desc">Rich chocolate brownie with a fudgy center.</p>   
+          <p class="desc">Rich chocolate brownie with a fudgy center.</p>
           <p class="price">₱80</p>
+          <input type="number" id="qty8" placeholder="Qty" min="1">
+          <button onclick="addToCart('Brownie', 80, 'qty8')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Cheesecake</h3>
           <p class="desc">Creamy cheesecake with a graham cracker crust.</p>
           <p class="price">₱150</p>
+          <input type="number" id="qty9" placeholder="Qty" min="1">
+          <button onclick="addToCart('Cheesecake', 150, 'qty9')">Add to Cart</button>
         </div>
         <div class="menu-item">
           <h3>Biscoff Croissant</h3>
           <p class="desc">Flaky croissant filled with Biscoff spread.</p>
           <p class="price">₱130</p>
+           <input type="number" id="qty10" placeholder="Qty" min="1">
+          <button onclick="addToCart('Biscoff Croissant', 130, 'qty10')">Add to Cart</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Optional Order Summary -->
+   <h2>Place Your Order</h2>
+  <div id="cart">
+    <h2>🛒 Order Summary</h2>
+    <ul id="order-list"></ul>
+    <h3 id="total">Total: ₱0</h3>
+    <button id="place-order" onclick="placeOrder()">Place Order</button>
+  </div>
+
   <footer>
     <p>&copy; 2025 Dylan's Bakeshop. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
