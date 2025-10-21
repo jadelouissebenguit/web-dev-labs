@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 4 - Button Click Message</title>
+  <style>
+    body {
+      font-family: Consolas, monospace;
+      background-color: #ffc9f4;
+      color: #333;
+      text-align: center;
+      margin: 60px;
+      font-size: larger;
+    }
+
+    h1 {
+      color: #6c0382;
+    }
+
+    button {
+      background-color: #6c0382;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: xx-large;
+      font-family: Consolas, monospace;
+    }
+
+    button:hover {
+      background-color: #b219d4;
+    }
+
+    .note {
+      margin-top: 20px;
+      background-color: #f0f8ff;
+      border-left: 5px solid #6c0382;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    
+    code {
+      background-color: #dbe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity 4: Button Click Message</h1>
+  <p>Click the button below to see the message.</p>
+
+  <!-- Using inline event as instructed -->
+  <button onclick="showMessage()">Click Me</button>
+
+  <div class="note">
+    💡 Tip: This uses the <code>onclick</code> event to trigger a JavaScript alert message.
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for clicking!");
+    }
+  </script>
+</body>
+</html>
