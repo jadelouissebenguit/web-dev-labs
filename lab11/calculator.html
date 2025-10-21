@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 5: Simple Calculator</title>
+  <style>
+    body {
+      font-family: Consolas, monospace;
+      background-color: #fff5e6;
+      color: #333;
+      text-align: center;
+      margin: 60px;
+    }
+
+    h1 {
+      color: #d97706;
+    }
+
+    input {
+      width: 150px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      text-align: center;
+      font-family: Consolas, monospace;
+    }
+
+    code {
+      background-color: #f3d986;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #f59e0b;
+      color: white;
+      padding: 15px 30px;
+      font-size: 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: Consolas, monospace;
+    }
+
+    button:hover {
+      background-color: #b45309;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .note {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffb300;
+      padding: 10px;
+      margin-top: 25px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity 5: Simple Calculator</h1>
+  <p>Enter two numbers below and click "Add" to see the result.</p>
+
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+  <br>
+  <button onclick="calculateSum()">Add</button>
+
+  <div id="result"></div>
+
+  <div class="note">
+    💡 Tip: The JavaScript code uses <code>getElementById()</code> and <code>innerText</code> to show the result.
+  </div>
+
+  <script>
+    function calculateSum() {
+      let number1 = parseFloat(document.getElementById("num1").value);
+      let number2 = parseFloat(document.getElementById("num2").value);
+      
+      // Check if inputs are valid numbers
+      if (isNaN(number1) || isNaN(number2)) {
+        document.getElementById("result").innerText = "⚠️ Please enter valid numbers.";
+      } else {
+        let sum = number1 + number2;
+        document.getElementById("result").innerText = "The sum is: " + sum;
+      }
+    }
+  </script>
+</body>
+</html>
