@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Activity 2 - Error Identification</title>
   <style>
+    body {
+      font-family: Consolas, monospace;
+      background-color: #ffe9e9;
+      color: #333;
+      margin: 40px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #c62828;
+    }
+
     .text-align-center {
       text-align: center;
     }
@@ -15,21 +28,62 @@
       margin-bottom: 16px;
     }
     .bg-red {
-      background-color: #ffcccc;
-    }
+      background-color: red;
+      border-radius: 40px;
+    }   
+    
     p {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+      font-family: Consolas, monospace;
+      font-size: 30px;
       color: #333;
     }
+
+    .code-box {
+      background-color: #fff5f5;
+      border: 2px solid #ffbaba;
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    code {
+      font-family: Consolas, monospace;
+      background-color: #eec0c0;
+      padding: 3px 5px;
+      border-radius: 4px;
+    }
+
+    .explanation {
+      background-color: #fff3cd;
+      color: #665c00;
+      border-left: 5px solid #ffb300;
+      padding: 10px;
+      margin-top: 25px;
+      border-radius: 4px;
+      display: inline-block;
+      text-align: left;
+    }
+
   </style>
 </head>
 <body>
   <h1>Activity 2: Error Identification</h1>
 
-  <!-- Corrected Code -->
   <div class="text-align-center p-5 mb-4 bg-red">
-    <p>This box has multiple utility fixes applied.</p>
+    <p>This box has multiple utility issues.</p>
+  </div>
+
+  <div class="explanation">
+    ⚠️ <strong>Errors found:</strong>
+    <ul>
+      <li>❌ <code>textalign-center</code> should be <code>text-align-center</code></li>
+      <li>❌ <code>p5</code> should be <code>p-5</code></li>
+      <li>❌ <code>bgred</code> should be <code>bg-red</code></li>
+    </ul>
+    ✅ These fixes will make the box properly styled in your corrected version (<code>fix.js</code>).
   </div>
 
   <script src="fix.js"></script>
