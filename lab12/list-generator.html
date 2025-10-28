@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+       body {
+  font-family: Arial, sans-serif;
+  background-color: #fff896;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  padding: 20px;
+}
+
+header {
+  border: 5px solid #827704;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #d3c200;
+  color: #000;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin-top: 40px;
+  text-align: center;
+  background: rgb(255, 225, 0);
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 5px solid #827704;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #000;
+}
+
+ol {
+  text-align: left;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .container {
+    padding: 25px;
+    border-radius: 35px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p, li, ol {
+    font-size: 14px;
+  }
+}
+    </style>
+
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 4 - List Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Activity 4: Create List Items with Loops</header>
+
+  <div class="container">
+    <h1>Fruit List Generator</h1>
+    <p>Below is a list of fruits created dynamically using JavaScript and a <code>for</code> loop:</p>
+
+    <!-- Empty list for JS to fill -->
+    <ul id="fruit-list"></ul>
+
+    <!-- Explanation Section -->
+    <h3>📝 Explanation:</h3>
+    <ol>
+      <li><b>Step 1:</b> Created an array of fruits in <code>list.js</code>.</li>
+      <li><b>Step 2:</b> Used a <code>for</code> loop to go through each fruit name.</li>
+      <li><b>Step 3:</b> Each loop creates a new <code>&lt;li&gt;</code> element.</li>
+      <li><b>Step 4:</b> Each item is added to the list using <code>appendChild()</code>.</li>
+    </ol>
+
+  <script src="list.js"></script>
+</body>
+</html>
