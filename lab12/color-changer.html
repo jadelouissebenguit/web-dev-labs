@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 5: Dynamic Background Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff896;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      transition: background-color 0.5s ease; /* smooth color change */
+    }
+
+    .container {
+      margin-top: 60px;
+      text-align: center;
+      background: rgb(255, 225, 0);
+      padding: 40px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 5px solid #827704;
+      width: 400px;
+      max-width: 90%;
+    }
+
+    header {
+      border: 5px solid #827704;
+      border-radius: 50px;
+      width: 100%;
+      background-color: #d3c200;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 15px 0;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    select {
+      background-color: #fef975;
+      border: 2px solid #827704;
+    }
+
+    button {
+      background-color: #fef975;
+      color: #000;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #c8bb07;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 25px;
+      }
+      button, select {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Activity 5: Dynamic Background Changer</header>
+
+  <div class="container">
+    <h1>Change Page Color</h1>
+    
+    <select id="colorSelect">
+      <option value="#f4a261">Orange</option>
+      <option value="#2a9d8f">Teal</option>
+      <option value="#e76f51">Coral</option>
+    </select>
+    
+    <button onclick="changeBackground()">Change Background</button>
+  </div>
+
+  <script>
+    function changeBackground() {
+      // Get the selected color from dropdown
+      const selectedColor = document.getElementById("colorSelect").value;
+
+      // Change the page background
+      document.body.style.backgroundColor = selectedColor;
+    }
+  </script>
+</body>
+</html>
