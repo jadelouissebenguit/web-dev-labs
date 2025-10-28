@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 2 - DOM Error Fix</title>
+  <link rel="stylesheet" href="style.css">
+  <style>body {
+  font-family: Arial, sans-serif;
+  background-color: #fff896;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  background-color: #d3c200;
+  color: rgb(0, 0, 0);
+  padding: 15px 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin-top: 60px;
+  background: rgb(255, 225, 0);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 450px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #fef975;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c8bb07;
+}
+
+ol {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+}</style>
+</head>
+<body>
+  <h2 class="page-header">Activity 2: Error Identification</h2>
+
+  <div class="container">
+    <h1 id="title">Welcome!</h1>
+
+    <div class="button-container">
+      <button onclick="changeTitle()">Change Title</button>
+    </div>
+
+    <h3 style="margin-top: 40px; color: #000000;">Identified Errors:</h3>
+    <ol style="text-align: left;">
+      <li><b>Incorrect HTML tag order:</b> <code>&lt;/h1 id="title"&gt;Welcome!&lt;h1/&gt;</code> should be <code>&lt;h1 id="title"&gt;Welcome!&lt;/h1&gt;</code>.</li>
+      <li><b>Button syntax error:</b> Missing <code>&gt;</code> and wrong placement of button text. Fixed to <code>&lt;button onclick="changeTitle()"&gt;Change Title&lt;/button&gt;</code>.</li>
+      <li><b>Wrong DOM method:</b> Used <code>querySelectorId()</code>, which doesn’t exist. Fixed to <code>getElementById()</code>.</li>
+      <li><b>Missing equals sign:</b> <code>innerHTML"Updated!"</code> should be <code>innerHTML = "Updated!"</code>.</li>
+      <li><b>No function defined:</b> Added <code>function changeTitle()</code> so the button click works.</li>
+    </ol>
+  </div>
+
+  <script>
+    function changeTitle() {
+      document.getElementById("title").innerHTML = "Updated!";
+    }
+  </script>
+</body>
+</html>
