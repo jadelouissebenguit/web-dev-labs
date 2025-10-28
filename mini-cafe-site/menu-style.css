@@ -236,6 +236,23 @@ nav a:hover {
   font-family: 'Comic Sans MS', cursive;
 }
 
+#menu-list-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8dc;
+  border: 5px dashed #e0c68b;
+  border-radius: 12px;
+  max-width: 1200px;
+}
+
+#menu-list-section h2 {
+  font-family: 'Cooper Black', sans-serif;
+  color: #7b4f42;
+  margin-bottom: 20px;
+}
+
+
 
 @media (max-width: 768px) {
   .menu-container {
