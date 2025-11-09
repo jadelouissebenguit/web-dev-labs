@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 - Fill-in-the-Blanks</title>
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #a2f8b2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 350px;
+            background: rgb(61, 167, 61);
+            padding: 25px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        p.code-output {
+            background: #ffffff;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 4px solid #24990d;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Activity 3 - Feedback Array</h1>
+
+    <div class="container">
+        <h2>Fill-in-the-Blanks Code</h2>
+
+        <p>Open Console (Fn & F12 → Console) to see the output.</p>
+
+        <p class="code-output" id="output"></p>
+    </div>
+
+    <script>
+
+        let feedbacks = [];
+
+        feedbacks.push("Great coffee!");
+        feedbacks.push("Nice ambiance");
+
+        let textOutput = "";
+
+        for (let i = 0; i < feedbacks.length; i++) {
+            console.log(feedbacks[i]);
+            textOutput += feedbacks[i] + "<br>";
+        }
+
+        document.getElementById("output").innerHTML = textOutput;
+    </script>
+
+</body>
+</html>
