@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity 4 - Contact Form with Array</title>
+
+<style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: #a2f8b2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 350px;
+        background: rgb(61, 167, 61);
+        padding: 25px;
+        margin-top: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        color: white;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"], textarea {
+        width: calc(100% - 4px);
+        padding: 10px;
+        margin: 8px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #97fe82;
+        border: none;
+        color: rgb(1, 58, 0);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background: #0ecc00;
+    }
+
+    .contact-list {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #e9f4ff;
+    color: black;
+    border-left: 4px solid #24990d;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;      
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    overflow-x: hidden;    
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Activity 4 - Contact Form with Array</h1>
+
+<div class="container">
+    <h2>Contact Form</h2>
+
+    <form onsubmit="addContact(event)">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-list" id="contactList"></div>
+</div>
+
+<script>
+let contacts = [];
+
+function addContact(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+
+    contacts.push({ name: name, message: message });
+
+    document.getElementById("name").value = "";
+    document.getElementById("message").value = "";
+
+    displayContacts();
+}
+
+function displayContacts() {
+    const container = document.getElementById("contactList");
+    container.innerHTML = "";
+
+    contacts.forEach((contact, index) => {
+        const div = document.createElement("div");
+        div.classList.add("contact-item");
+        div.innerHTML = `<strong>${index + 1}. ${contact.name}:</strong> ${contact.message}`;
+        container.appendChild(div);
+    });
+}
+</script>
+
+</body>
+</html>
