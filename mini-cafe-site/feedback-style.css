@@ -1,0 +1,71 @@
+/* Container for feedback form */
+.container-feedback {
+    width: 400px;
+    background-color: #fff8dc;
+    padding: 25px;
+    margin: 30px auto;
+    border: 5px dashed #e0c68b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container-feedback label {
+    font-weight: bold;
+}
+
+.container-feedback input[type="text"],
+.container-feedback textarea {
+    width: calc(100% - 4px);
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container-feedback button {
+    width: 100%;
+    padding: 10px;
+    background: #ffe375;
+    border: none;
+    color: #3e3e3e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container-feedback button:hover {
+    background: #ffd44d;
+}
+
+/* Feedback messages */
+.error-message {
+    color: #900;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success-message {
+    color: #064d00;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Feedback list */
+.feedback-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.feedback-item {
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
