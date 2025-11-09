@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2 - Form Fix</title>
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #a2f8b2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 350px;
+            background: rgb(61, 167, 61);
+            padding: 25px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 4px);
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #97fe82;
+            border: none;
+            color: rgb(1, 58, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #0ecc00;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9f4ff;
+            border-left: 4px solid #24990d;
+            display: none;
+        }
+
+        .error-box {
+            width: 350px;
+            background: #fff;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 5px solid red;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Activity 2 - Error Identification</h1>
+
+    <div class="container">
+        <h2>Fixed Form Validation</h2>
+
+        <form onsubmit="validateForm(event)">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="error-box">
+        <h3>Identified Errors:</h3>
+        <ol>
+            <li>Used assignment operator (=) instead of comparison (===).</li>
+            <li>Missing <strong>event.preventDefault()</strong> to stop page refresh.</li>
+            <li><strong>validateForm()</strong> did not accept the event parameter.</li>
+            <li>No <strong>return</strong> after validation fails.</li>
+        </ol>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // prevents page reload
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name === "") {
+                alert("Please enter your name.");
+                return;
+            }
+
+            if (email === "") {
+                alert("Please enter your email.");
+                return;
+            }
+
+            const resultBox = document.getElementById("result");
+            resultBox.style.display = "block";
+            resultBox.innerHTML = `
+                <strong>Submitted Information:</strong><br>
+                Name: ${name}<br>
+                Email: ${email}
+            `;
+        }
+    </script>
+
+</body>
+</html>
